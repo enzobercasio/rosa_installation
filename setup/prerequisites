@@ -1,0 +1,30 @@
+# Login to AWS console to enable Red Hat OpenShift on AWS (ROSA) 
+
+# Download ROSA CLI (https://console.redhat.com/openshift/downloads)
+
+sudo mv rosa /usr/local/bin/
+
+# Download AWS CLI (https://aws.amazon.com/cli/)
+
+$ Test both CLI
+
+aws help
+rosa 
+
+# Configure AWS
+aws configure 
+
+# Validate identity
+aws sts get-caller-identity
+
+# Login to ROSA
+rosa login 
+
+# Download token 
+# Verify ROSA 
+rosa verify permissions
+rosa verify quota
+rosa init 
+
+
+
