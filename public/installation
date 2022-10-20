@@ -1,0 +1,25 @@
+rosa create cluster --interactive
+
+# Run the following commands to continue the cluster creation:
+
+	rosa create operator-roles --cluster lbercasi
+	rosa create oidc-provider --cluster lbercasi
+
+# To determine when your cluster is Ready 
+rosa describe cluster -c lbercasi
+
+# To watch your cluster installation logs
+rosa logs install -c lbercasi --watch'
+
+# To get web console link
+rosa describe cluster --cluster=lbercasi
+
+# Create cluster-admin user
+rosa create admin --cluster=lbercasi
+
+# Delete cluster
+rosa delete cluster --cluster=lbercasi
+
+# Delete cloudformation stack 
+rosa init --delete-stack 
+
