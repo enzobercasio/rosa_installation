@@ -25,6 +25,6 @@ rosa login
 rosa verify permissions
 rosa verify quota
 rosa init 
-
+rosa whoami
 
 
