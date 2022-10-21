@@ -41,3 +41,9 @@ $ rosa grant user dedicated-admin --user=<idp_user_name> --cluster=<cluster_name
 ## Checks if your install is ready (look for State: Ready),
 ## and provides your Console URL to login to the web console.
 $ rosa describe cluster --cluster=<cluster_name>
+
+#list the ROSA Instance Types
+rosa list instance-types 
+
+# to check that the desired AZ supports the desired instance type
+aws ec2 describe-instance-type-offerings
