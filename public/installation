@@ -20,6 +20,8 @@ rosa create admin --cluster=lbercasi
 # Delete cluster
 rosa delete cluster --cluster=lbercasi
 
+rosa logs uninstall -c lbercasi --watch 
+
 # Delete cloudformation stack 
 rosa init --delete-stack 
 
