@@ -47,3 +47,10 @@ rosa list instance-types
 
 # to check that the desired AZ supports the desired instance type
 aws ec2 describe-instance-type-offerings
+
+# inspect resources of ROSA cluster 
+ aws ec2 describe-instances --filters "Name=tag:Name,Values=mycluster*"
+ aws ec2 describe-vpcs --filters "Name=tag:Name,Values=mycluster*"
+ aws ec2 describe-subnets --filters "Name=tag:Name,Values=mycluster*"
+ aws elbv2 describe-load-balancers
+ 
