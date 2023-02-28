@@ -56,3 +56,6 @@ aws ec2 describe-instance-type-offerings
  
  # download oc
  rosa download oc
+
+# delete initial cluster admin user
+rosa delete admin --cluster mycluster
