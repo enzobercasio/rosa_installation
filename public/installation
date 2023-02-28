@@ -54,3 +54,5 @@ aws ec2 describe-instance-type-offerings
  aws ec2 describe-subnets --filters "Name=tag:Name,Values=mycluster*"
  aws elbv2 describe-load-balancers
  
+ # download oc
+ rosa download oc
